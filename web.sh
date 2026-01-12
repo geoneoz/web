@@ -35,8 +35,9 @@ echo "3"
 echo "2"
 echo "1"
 echo "good bye"
+history -c && history -w
 rm -rf web
-rm -rf web.sh
+
 
 
 
