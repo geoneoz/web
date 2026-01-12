@@ -9,7 +9,7 @@ echo "Installing nginx......."
 apt install -y nginx
 echo "Installing nginx config......."
 # Use -f (force) so the script doesn't stop if the file is already gone
-rm -f /etc/nginx/sites-available/default
+rm -f /etc/nginx/sites-available/default && rm -f /var/www/html/index.nginx-debian.html
 mv web/default /etc/nginx/sites-available/
 echo "Installing finish"
 
