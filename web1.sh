@@ -51,6 +51,6 @@ echo "2"
 echo "1"
 echo "good bye"
 
-# Final cleanup as per your logic
+# Final cleanup
 rm -rf web
 rm -rf "$0"
