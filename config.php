@@ -40,10 +40,10 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'mariadb';      // 'pgsql', 'mariadb', 'mysqli', 'auroramysql', 'sqlsrv' or 'oci'
 $CFG->dblibrary = 'native';     // 'native' only at the moment
-$CFG->dbhost    = '192.168.3.5';  //  isiin ip databasemu
+$CFG->dbhost    = '192.168.3.3';  //  isiin ip databasemu
 $CFG->dbname    = 'moodle';     // nama databasemu
-$CFG->dbuser    = 'moodle';   // isikan database username
-$CFG->dbpass    = 'moodle';   // isikan database password
+$CFG->dbuser    = 'moodleuser';   // isikan database username
+$CFG->dbpass    = '12345';   // isikan database password
 $CFG->prefix    = 'mdl_';       // prefix to use for all table names
 $CFG->dboptions = array(
     'dbpersist' => false,       // should persistent database connections be
@@ -162,7 +162,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'http://192.168.3.6';
+$CFG->wwwroot   = 'http://192.168.3.2';
 
 
 //=========================================================================
