@@ -40,6 +40,10 @@ unzip moodle-latest-500.zip -d /var/www/html
 rm -f /var/www/html/moodle/config-dist.php
 mv web/config.php /var/www/html/moodle/
 mkdir /var/moodledata/
+chown -R www-data:www-data /var/www/html
+chown -R www-data:www-data /var/moodledata
+chmod -R 755 /var/www/html/moodle
+chmod -R 755 /var/moodledata
 echo "Instaling finish"
 echo "Setelah install edit ip di dalam file config.php di dalam moodle"
 
