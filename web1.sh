@@ -37,7 +37,7 @@ wget https://packaging.moodle.org/stable500/moodle-latest-500.zip
 unzip moodle-latest-500.zip -d /var/www/html
 
 # Clean up existing config if it exists
-rm -f /var/www/html/moodle/config.php
+rm -f /var/www/html/moodle/config-dist.php
 mv web/config.php /var/www/html/moodle/
 echo "Instaling finish"
 echo "Setelah install edit ip di dalam file config.php di dalam moodle"
