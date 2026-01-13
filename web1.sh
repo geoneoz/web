@@ -33,7 +33,7 @@ echo "Installing php finish"
 echo "Installing moodle...."
 apt install wget zip -y
 # Split the wget and unzip commands so they execute separately
-wget https://download.moodle.org/download.php/stable403/moodle-4.3.12.zip
+wget https://packaging.moodle.org/stable500/moodle-latest-500.zip
 unzip moodle-4.3.12.zip -d /var/www/html
 
 # Clean up existing config if it exists
