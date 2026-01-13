@@ -43,12 +43,19 @@ echo "Instaling finish"
 echo "Setelah install edit ip di dalam file config.php di dalam moodle"
 
 echo "thanks for using ALVIN'S PRODUCT"
+sleep 1
 echo "initiate self destruction"
+sleep 1
 echo "5"
+sleep 1
 echo "4"
+sleep 1
 echo "3"
+sleep 1
 echo "2"
+sleep 1
 echo "1"
+sleep 1
 echo "good bye"
 
 # Final cleanup
