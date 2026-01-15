@@ -161,8 +161,14 @@ $CFG->dboptions = array(
 //
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
-
-$CFG->wwwroot   = 'http://'.$_SERVER['HTTP_HOST'];
+$alamat_akses = $_SERVER['HTTP_HOST'];
+if (strpos($alamat_akses, '172.16.100.36') !== false) {
+    $CFG->wwwroot = 'http://172.16.100.36:9090';
+    $_SERVER['SERVER_PORT'] = 9090;
+} else {
+    $CFG->wwwroot = 'http://192.168.36.2';
+}
+// $CFG->wwwroot   = 'http://'.$_SERVER['HTTP_HOST'];
 
 
 //=========================================================================
