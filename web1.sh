@@ -51,7 +51,7 @@ sleep 3
 echo "setup cron backup"
 sleep 2
 mkdir /backup
-mv backup_web.sh /backup
+mv web/backup_web.sh /backup
 echo "should be done setup backup"
 sleep 2
 
