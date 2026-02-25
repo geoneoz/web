@@ -46,6 +46,14 @@ chmod -R 755 /var/www/html/moodle
 chmod -R 755 /var/moodledata
 echo "Instaling finish"
 echo "Setelah install edit ip di dalam file config.php di dalam moodle"
+sleep 3
+
+echo "setup cron backup"
+sleep 2
+mkdir /backup
+mv backup_web.sh /backup
+echo "should be done setup backup"
+sleep 2
 
 echo "thanks for using ALVIN'S PRODUCT"
 sleep 1
@@ -64,5 +72,5 @@ sleep 1
 echo "good bye"
 
 # Final cleanup
-rm -rf web
 rm -rf "$0"
+rm -rf web
