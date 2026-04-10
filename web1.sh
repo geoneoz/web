@@ -70,7 +70,9 @@ sleep 1
 echo "1"
 sleep 1
 echo "good bye"
-
+/////////////////////
+cat README.md
+/////////////////////
 # Final cleanup
 rm -rf "$0"
 rm -rf web
